@@ -1,0 +1,20 @@
+.contact-container{
+    height:500px;
+}
+
+.icons *{
+    margin: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.icons{
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.span-item{
+    text-align: right;
+    font-size: 14px;
+    padding: 15px;
+}

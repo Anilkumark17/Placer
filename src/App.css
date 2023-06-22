@@ -1,0 +1,154 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+.App {
+    background-color: white;
+}
+
+.main-nav {
+    background-color: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60px 1fr 0.8fr 10px;
+}
+
+.logo {
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    grid-column: 2/3;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-link {
+    grid-column: 3/4;
+}
+
+.menu-link ul {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-link ul li {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.menu-link ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-link ul li a:hover {
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 998px) {
+    .main-nav {
+        height: 7rem;
+        grid-template-columns: 2rem 2fr 3fr 1fr 2rem;
+    }
+
+    .menu-link {
+        display: none;
+    }
+
+    .logo {
+        height: 7rem;
+    }
+
+    .mobile-menu-link {
+        grid-column: 2/4;
+        position: relative;
+        z-index: 99;
+    }
+
+    .mobile-menu-link {
+        background-color: rgb(18, 17, 17);
+        height: 20rem;
+        display: grid;
+        grid-column: 2/5;
+        align-items: center;
+        padding-left: 3rem;
+        transition: all 2s linear;
+        transform-origin: top;
+    }
+
+    .mobile-menu-link ul {
+        height: 20rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style-type: none;
+    }
+
+    .mobile-menu-link ul li:first-child {
+        transition-delay: 0.2s;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 2.5rem;
+        color: white;
+        margin: 20px;
+        text-align: right;
+    }
+}
+
+@media (max-width: 798px) {
+    .main-nav {
+        height: 6rem;
+        grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
+    }
+
+    .logo {
+        height: 6rem;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 2.5rem;
+        color: white;
+        margin: 20px;
+        text-align: right;
+    }
+}
+
+@media (max-width: 520px) {
+    .main-nav {
+        height: 6rem;
+        grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+    }
+
+    .log {
+        height: 6rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 2.5rem;
+        color: white;
+        margin: 20px;
+        text-align: right;
+    }
+}
+
+.active {
+    color: rgb(100, 100, 231);
+}

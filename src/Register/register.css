@@ -1,0 +1,75 @@
+.registration-container {
+    background-image: url("../assests/login-bg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.registration-img {
+    width: 700px;
+    height: 500px;
+    margin: 35px;
+    margin-top: 200px;
+}
+
+.box {
+    text-align: center;
+}
+
+.heading {
+    font-size: 34px;
+    margin: 40px;
+    margin-bottom: 0;
+    padding: 20px;
+    text-align: 300;
+}
+
+hr {
+    width: 280px;
+    height: 0px;
+    border: 6px solid #ee4e39;
+    text-align: left;
+}
+
+.box input {
+    width: 401.93px;
+    height: 48.06px;
+    background: #ffffff;
+    border: 1.42025px solid #000000;
+    box-shadow: 0px 5.68098px 5.68098px rgba(0, 0, 0, 0.25);
+    border-radius: 14.2025px;
+    margin: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.register-btn {
+    width: 200.44px;
+    height: 48.06px;
+    left: 922.25px;
+    top: 694.55px;
+    background: #ffffff;
+    border: 1.42025px solid #000000;
+    box-shadow: 0px 5.68098px 5.68098px rgba(0, 0, 0, 0.25);
+    border-radius: 42.6074px;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 550;
+}
+
+p {
+    margin-bottom: 80px;
+}
+
+.login {
+    color: rgba(12, 50, 172, 0.64);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .registration-img {
+        display: none;
+    }
+}
